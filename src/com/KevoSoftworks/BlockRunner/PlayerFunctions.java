@@ -109,11 +109,24 @@ public class PlayerFunctions{
 		    	return false;
 		    }
 		}
-		
+		/** OLD CHECK OF ARMOUR
 		for (ItemStack item : plugin.getServer().getPlayer(player).getInventory().getArmorContents()){
 			 if(item.getTypeId() != 0){
 				 return false;
 			 }
+		}*/
+		//New Checking of Armour
+		if(plugin.getServer().getPlayer(player).getInventory().getHelmet() != null){
+			return false;
+		}
+		if(plugin.getServer().getPlayer(player).getInventory().getChestplate() != null){
+			return false;
+		}
+		if(plugin.getServer().getPlayer(player).getInventory().getLeggings() != null){
+			return false;
+		}
+		if(plugin.getServer().getPlayer(player).getInventory().getBoots() != null){
+			return false;
 		}
 		return true;
 	}

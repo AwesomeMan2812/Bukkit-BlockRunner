@@ -58,7 +58,7 @@ public class Functions {
 	public Sound getSoundFromChannel(int channel){
 		Sound sound = null;
 		if(channel == 1){
-			sound = Sound.BLOCK_NOTE_HAT;
+			sound = Sound.BLOCK_NOTE_HARP;
 		} else if(channel == 2){
 			sound = Sound.BLOCK_NOTE_BASS;
 		} else if(channel == 3){
@@ -66,9 +66,9 @@ public class Functions {
 		} else if(channel == 4){
 			sound = Sound.BLOCK_NOTE_SNARE;
 		} else if(channel == 5){
-			sound = Sound.BLOCK_NOTE_PLING;
-		} else {
 			sound = Sound.BLOCK_NOTE_HAT;
+		} else {
+			sound = Sound.BLOCK_NOTE_HARP;
 		}
 		
 		return sound;
