@@ -1,0 +1,68 @@
+name: BlockRunner
+main: com.KevoSoftworks.BlockRunner.Main
+version: 0.9.1
+description: >
+            Blockrunner Game
+            Changelog (from v0.8 onwards)
+            v0.9.1:
+                +Deny command usage when in-game.
+                =Bug #3
+            v0.9:
+                +Continue where you left off in a level.
+                =Level data would not always be displayed.
+                =Bug #2
+            v0.8:
+                +Customisable prizes per level.
+                +Config and Plugin reloading.
+                =Creating a level spawn without id being a number too low.
+                =Bug #1
+                
+            Bugs:
+            (+ = still present, - = fixed)
+                -#3: (v0.9) Possible loophole where players are able to get back into the level after quiting the blockrunner game when using essentials' /back.
+                -#2: (v0.8) '/br reload all' buggy when players are in game, some of these players will parially left the blockrunner game, others might not. If the error is thrown, the plugin stops reloading, but is still usable.
+                -#1: (v0.7.1B) When a player falls in lava, and a checkpoint is set, the player level will be set to 1, but the player will respawn at the checkpoint. Once a player finishes the level it will teleport to level 2. 
+commands:
+    br:
+        description: Allows access to the /br command
+    blockrunner:
+        description: Allows access to the /br command
+    blockrun:
+        description: Allows access to the /br command
+    blockr:
+        description: Allows access to the /br command
+    blrun:
+        description: Allows access to the /br command
+    blr:
+        description: Allows access to the /br command
+permissions:
+    blockrunner.join:
+        default: true
+        description: allows access to /br join
+    blockrunner.help:
+        default: true
+        description: allows access to /br help
+    blockrunner.leave:
+        default: true
+        description: allows access to /br leave
+    blockrunner.music:
+        default: true
+        description: allows access to /br music
+    blockrunner.admin.setspawn:
+        default: op
+        description: allows access to /br setspawn
+    blockrunner.admin.setworld:
+        default: op
+        description: allows access to /br setworld
+    blockrunner.admin.setprize:
+        default: op
+        description: allows access to /br setprize
+    blockrunner.admin.gamemode.list:
+        default: op
+        description: allows access to /br gamemode list
+    blockrunner.admin.gamemode.modify:
+        default: op
+        description: allows access to /br gamemode modify
+    blockrunner.admin.reload:
+        default: op
+        description: allows access to /br reload

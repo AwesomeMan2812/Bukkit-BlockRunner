@@ -1,0 +1,10 @@
+#BlockRunner config file
+block: 35
+world:
+levels:
+gamemodes:
+    default:
+        amount: 1
+        time: 20
+        return: 20
+debug: false
