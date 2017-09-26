@@ -58,17 +58,17 @@ public class Functions {
 	public Sound getSoundFromChannel(int channel){
 		Sound sound = null;
 		if(channel == 1){
-			sound = Sound.NOTE_PIANO;
+			sound = Sound.BLOCK_NOTE_HAT;
 		} else if(channel == 2){
-			sound = Sound.NOTE_BASS;
+			sound = Sound.BLOCK_NOTE_BASS;
 		} else if(channel == 3){
-			sound = Sound.NOTE_BASS_DRUM;
+			sound = Sound.BLOCK_NOTE_BASEDRUM;
 		} else if(channel == 4){
-			sound = Sound.NOTE_SNARE_DRUM;
+			sound = Sound.BLOCK_NOTE_SNARE;
 		} else if(channel == 5){
-			sound = Sound.NOTE_STICKS;
+			sound = Sound.BLOCK_NOTE_PLING;
 		} else {
-			sound = Sound.NOTE_PIANO;
+			sound = Sound.BLOCK_NOTE_HAT;
 		}
 		
 		return sound;

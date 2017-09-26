@@ -168,7 +168,7 @@ public class PlayerFunctions{
 	//set player checkpoint
 	public void setCheckpoint(String player){
 		if(!plugin.playerCheckpoint.containsKey(player) || !plugin.playerCheckpoint.get(player).equals(getRoundedLocation(plugin.getServer().getPlayer(player).getLocation()))){
-			plugin.getServer().getPlayer(player).playSound(plugin.getServer().getPlayer(player).getLocation(), Sound.ORB_PICKUP, (float)1.0, (float)1.5);
+			plugin.getServer().getPlayer(player).playSound(plugin.getServer().getPlayer(player).getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, (float)1.0, (float)1.5);
 			plugin.playerCheckpoint.put(player, getRoundedLocation(plugin.getServer().getPlayer(player).getLocation()));
 		}
 	}
