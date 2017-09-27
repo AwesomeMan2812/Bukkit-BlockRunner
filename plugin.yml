@@ -7,6 +7,7 @@ description: >
             (Note All versions below are in Beta, even v1.0.0)
             v1.0.0:
                 +Updated to Support Spigot/Bukkit 1.9
+                =Sounds have been updated to their 1.9 correspondents.
                 =Old way of checking for no armour broke in 1.9, added new way.
             v0.9.1:
                 +Deny command usage when in-game.
